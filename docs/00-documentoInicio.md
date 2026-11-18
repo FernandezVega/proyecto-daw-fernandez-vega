@@ -10,7 +10,7 @@
 |---|---|
 | **Nombre y apellidos** | Claudia Fernández Vega |
 | **Usuario de GitHub** | FernandezVega |
-| **Repositorio del proyecto** | **pendiente** |
+| **Repositorio del proyecto** | [proyecto-daw-fernandez-vega](https://github.com/FernandezVega/proyecto-daw-fernandez-vega)|
 | **Ciclo y curso** | DAW, 2.º · curso 2026-27 |
 | **Fecha** | 2026-11-06 |
 
