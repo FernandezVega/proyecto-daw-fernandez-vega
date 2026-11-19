@@ -16,19 +16,27 @@
 
 *El problema en **una frase**. Después, **3-5 preguntas** que vas a contestar con este documento (por ejemplo: «¿Qué soluciones existen?», «¿Cómo ganan dinero?», «¿Qué tecnologías usan?»). Indica **dónde y cuándo** buscaste (buscadores, tiendas de aplicaciones, repositorios, informes del sector).*
 
-**Problema:** [RELLENAR: una frase]
+**Problema:** Las empresas que dependen de ser encontradas en internet tienen el problema de que sus clientes ya no las ven ni las citan: sus páginas quedan fuera de Google y de las respuestas de los asistentes de IA, y no saben por qué.
 
 | # | Pregunta | Dónde busqué | Fecha |
 |---|---|---|---|
-| P1 | [RELLENAR] | | |
+| P1 | ¿Qué soluciones existen ya para analizar el posicionamiento SEO? | En páginas oficiales  de empresas del sector, en IA. [SERANKING](https://seranking.com/es/), [SEMRUSH](https://www.semrush.com) , además de documentación oficial de Google, [SEO-Starter-Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es)| 2026-11-18
+| P2  | ¿Qué precio tienen estos servicios de análisis de posicionamiento? | En las páginas de servicios / productos de las marcas líderes en el sector. Por ejemplo: [Planes y precios SERanking](https://seranking.com/es/subscription.html) | 2026-11-18
+| P3 | ¿Qué les falta a estas soluciones para medir también la visibilidad en asistentes de IA (GEO/AEO)? |En blogs especializados, como [SEOINHOUSE](https://www.seoinhouse.es/visibilidad-en-ia-la-cifra-que-el-cliente-nos-pide-no-existe/) , y en IA. | 2026-11-18
+
 
 ## 2. Soluciones existentes (CE 1a, 1c, 2a)
 
 *Tabla de **5-8** soluciones (productos, servicios o proyectos de código abierto) que resuelven total o parcialmente el problema. Incluye alguna **alternativa gratuita o de código abierto** y alguna **no digital** (hoja de cálculo, papel) si existe.*
 
-| Solución | Para quién | Qué hace | Modelo de precio | Enlace y fecha de acceso |
-|---|---|---|---|---|
-| [RELLENAR] | | | | |
+| Solución | Para quién | Qué hace | Modelo de precio | Enlace y fecha de acceso | Estado |
+|---|---|---|---|---|---|
+| SE Ranking | Equipos SEO y agencias que gestionan varias webs y clientes | Plataforma SEO todo en uno: posiciones, palabras clave, auditoría, competidores, informes y visibilidad en IA (menciones, AI Overviews, ChatGPT) | Suscripción: Core desde 87,20 €/mes, Growth desde 188,00 €/mes y API desde 25 €/mes; prueba gratis 14 días sin tarjeta | [seranking.com/es](https://seranking.com/es/) — 2026-11-19 | leído |
+| Morningscore | Pequeñas empresas que quieren hacer su SEO/GEO o recibir acompañamiento | SEO y GEO: palabras clave, SEO Score, GEO Score sobre 100 prompts, AI Overviews, ChatGPT, salud del sitio con problemas priorizados, backlinks, misiones y plugins para WordPress y Shopify | Suscripción: 49-259 USD/mes (4 planes, según los datos de la página); también orientación 1:1 y gestión del crecimiento; prueba gratis 14 días | [morningscore.io/es](https://morningscore.io/es/) — 2026-11-19 | leído |
+| Keyword.com | Agencias SEO en crecimiento, equipos internos y equipos enterprise | Rastreador de posiciones y visibilidad IA: Google, SERP locales, AI Overviews, AI Mode, ChatGPT, Perplexity y Gemini; share of voice, API, MCP e informes en marca blanca | Suscripción por número de keywords: desde 3 $/mes (50 keywords, pago anual; 4 $/mes mensual); visibilidad IA desde 9,80 $/mes por 100 créditos; prueba gratis 14 días | [keyword.com/es](https://keyword.com/es/) — 2026-11-19 | leído |
+| Semrush | Empresas, medianas, equipos pequeños, autónomos y agencias | Plataforma SEO y visibilidad en IA (Semrush One): palabras clave, competidores, auditoría técnica, tráfico, contenidos, local, RR. PP. para IA, MCP y API | Suscripción (planes en `/pricing/`); importes: **no lo dice en esta página**. Prueba gratis 7 días | [es.semrush.com](https://es.semrush.com/) — 2026-11-19 | leído |
+| Serpstat | Agencias, ecommerce, pequeños negocios, SaaS y medios | Investiga palabras clave, analiza competidores, monitoriza posiciones, audita el sitio, agrupa keywords y ofrece API en Google y Bing (230 países) | Suscripción (planes en `/es/page/pricing-plans/`); importes: **no lo dice en esta página**. Prueba gratis 7 días | [serpstat.com/es](https://serpstat.com/es/) — 2026-11-19 | leído |
+| Lighthouse | Desarrolladores y responsables de web que quieren revisar su propia página sin coste | Herramienta de código abierto que audita rendimiento, accesibilidad, SEO y buenas prácticas; se usa en DevTools de Chrome, por línea de comandos, como módulo Node o desde PageSpeed Insights | Gratuito; licencia Apache-2.0 | [developer.chrome.com/docs/lighthouse/overview](https://developer.chrome.com/docs/lighthouse/overview) y [repositorio](https://github.com/GoogleChrome/lighthouse) — 2026-11-19 | leído |
 
 *Figura: comparativa de las soluciones (opcional, un cuadrante o un esquema).*
 
@@ -38,7 +46,12 @@
 
 | Patrón | Soluciones que lo usan | Ventaja | Riesgo |
 |---|---|---|---|
-| [RELLENAR] | | | |
+| Suscripción por niveles | Las 5: SE Ranking (Core, Growth), Morningscore (Lite a Premium), Keyword.com (por keywords), Semrush y Serpstat (planes) | Ingreso recurrente; el cliente escala según su tamaño | El precio final no es fijo: sube con keywords, usuarios, webs y módulos |
+| Prueba gratuita y herramientas gratuitas | Las 5: 14 días en SE Ranking, Morningscore y Keyword.com (sin tarjeta); 7 días en Semrush y Serpstat | Entrar sin pagar y mostrar el valor antes de vender | La prueba limita funciones; la página no dice cuántos usuarios convierten |
+| Complementos y pago por volumen | SE Ranking (API desde 25 €/mes), Morningscore (créditos de IA por plan), Keyword.com (visibilidad IA desde 9,80 $/mes por 100 créditos), Semrush (módulos de SEO, IA, tráfico…), Serpstat (API) | Pagas por lo que usas; se puede empezar pequeño | El coste depende del volumen real (palabras, prompts, créditos): difícil de estimar |
+| Servicio y precio a medida | Morningscore (orientación 1:1 y gestión del crecimiento), Semrush (demo y empresa), SE Ranking (demo y paquete para agencias) | Llega a clientes que no quieren hacerlo ellos | Precio no público: hay que pedirlo; no se puede comparar ni presupuestar sin hablar con cada cliente |
+
+**Modelo de presencIA:** suscripción por niveles con prueba gratuita y complementos, inspirada en las soluciones del apartado 2, pero centrada en empresas pequeñas de ámbito local. El precio se personalizaría según los servicios contratados (auditoría SEO, seguimiento de visibilidad en IA e informes), para que cada empresa pague solo lo que necesita y pueda ampliar después. Al trabajar con un público local también cabe el trato directo y el presupuesto a medida, como en el cuarto patrón. **A día de hoy aún no sé qué precio poner**: dependerá del tamaño de la empresa y de los servicios elegidos, así que no doy una cifra concreta. Esto no elimina el problema de la estimación: sin esos datos no se puede dar un coste único.
 
 ## 4. Herramientas y tecnologías (CE 2a, 2b)
 
