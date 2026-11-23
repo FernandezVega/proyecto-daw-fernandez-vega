@@ -30,9 +30,9 @@ La aplicación tendrá una zona privada, donde los usuarios registrados podrán 
 
 ## 4. Qué problema o necesidad resuelve
 
-Las empresas que poseen una web no tienen forma de saber si su presencia digital está preparada para la visibilidad en buscadores convencionales y, sobre todo, en los nuevos motores de respuesta generativa (GEO y AEO). Las herramientas SEO existentes dan prioridad al SEO clásico y no cubren esta capa.
+Las empresas que poseen una web no tienen una forma sencilla y asequible de saber si su presencia digital está preparada para la visibilidad en buscadores convencionales y, sobre todo, en los nuevos motores de respuesta generativa (GEO y AEO). Las plataformas que ya miden esta capa (SE Ranking, Morningscore, Keyword.com y Semrush) están pensadas para agencias y equipos SEO, se pagan desde el primer mes y su precio sube con keywords, usuarios y créditos.
 
-`presencIA` audita de forma automática el SEO y la preparación para IA, y ofrece el servicio profesional de mejoras.
+**presencIA** audita de forma automática el SEO y la preparación para IA, con una primera auditoría gratuita y un precio adaptado a la empresa pequeña. No ejecuta las mejoras: solo audita, genera el informe y recomienda qué cambiar.
 
 ## 5. Para quién
 
@@ -43,15 +43,15 @@ La aplicación estaría dirigida al ámbito empresarial: empresas, de cualquier 
 | # | Funcionalidad | ¿Imprescindible? (sí / no) |
 |---|---|---|
 | 1 | Auditoría automática de una URL: controles SEO, GEO y AEO, con puntuación | **Sí** |
-| 2 | Generación de nforme de auditoría: privado, público o por enlace  | **Sí** |
+| 2 | Generación de informe de auditoría: privado, público o por enlace | **Sí** |
 | 3 | Explorador de keywords: sugerencias de Google/Bing, intención, dificultad | **Sí** |
-| 4 | Seguimiento de posiciones de una marca | **Sí**
-5             |Login de usuario en zona privada        | **Sí**     
-6             |       Envío de formulario de solicitud de información con email de confirmación|  **Sí**
+| 4 | Seguimiento de posiciones de una marca | **Sí** |
+| 5 | Login de usuario en zona privada        | **Sí**  |   
+| 6 | Envío de formulario de solicitud de información con email de confirmación|  **Sí** |
 
 ## 7. Tecnologías previstas
 
-**Pendiente** Imagino que utilizaremos las tecnologías que hemos visto el curso anterior, Java, JavaScript, Html, CSS... en bases de datos tengo menos soltura, pero me gustaría utilizar sql como lenguaje porque es con el que estoy familiarizada. 
+Servidor con **Java y Spring Boot**; base de datos **PostgreSQL**; cliente con **HTML, CSS y JavaScript sin framework**; autenticación con **Spring Security y JWT**; despliegue con **Docker en un VPS**. Las decisiones están comparadas con sus alternativas, licencias y coste en el apartado 4 de [`01b-sota.md`](01b-sota.md). El coste del VPS queda **pendiente** porque no hay proveedor elegido.
 
 ## 8. Dónde se integra con los módulos de 2.º
 

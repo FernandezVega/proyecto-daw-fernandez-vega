@@ -7,7 +7,7 @@
 > **Reglas.**
 >
 > - Solo cuenta lo que tiene **enlace y fecha de acceso**.
-> - Si usas IA para buscar, **abre cada fuente** y comprueba que existe y dice lo que te cuenta la IA. Puede inventar productos, precios o referencias. Decláralo en [`declaracion-uso-ia.md`](declaracion-uso-ia.md).
+> - Si usas IA para buscar, **abre cada fuente** y comprueba que existe y dice lo que te cuenta la IA. Puede inventar productos, precios o referencias. Decláralo en la [bitácora de uso de IA](../asistenciaIA/bitacora.md).
 > - Usa **solo información pública** de las soluciones que estudias. **Nada** de la empresa de prácticas ni de clientes reales.
 > - Compara herramientas con **los mismos criterios**, no por opinión. Salvo razón argumentada, prefiere lo que has visto en el ciclo (Java 21, Spring Boot, SQL).
 > - Si algo no lo has podido comprobar, dilo en el apartado 8.
@@ -46,12 +46,13 @@
 
 | Patrón | Soluciones que lo usan | Ventaja | Riesgo |
 |---|---|---|---|
-| Suscripción por niveles | Las 5: SE Ranking (Core, Growth), Morningscore (Lite a Premium), Keyword.com (por keywords), Semrush y Serpstat (planes) | Ingreso recurrente; el cliente escala según su tamaño | El precio final no es fijo: sube con keywords, usuarios, webs y módulos |
-| Prueba gratuita y herramientas gratuitas | Las 5: 14 días en SE Ranking, Morningscore y Keyword.com (sin tarjeta); 7 días en Semrush y Serpstat | Entrar sin pagar y mostrar el valor antes de vender | La prueba limita funciones; la página no dice cuántos usuarios convierten |
+| Suscripción por niveles | 5 de las 6: SE Ranking (Core, Growth), Morningscore (Lite a Premium), Keyword.com (por keywords), Semrush y Serpstat (planes) | Ingreso recurrente; el cliente escala según su tamaño | El precio final no es fijo: sube con keywords, usuarios, webs y módulos |
+| Prueba gratuita | SE Ranking, Morningscore y Keyword.com (14 días, sin tarjeta); Semrush y Serpstat (7 días) | Entrar sin pagar y mostrar el valor antes de vender | La prueba limita funciones; la página no dice cuántos usuarios convierten |
+| Gratuito y código abierto | Lighthouse (gratuito, licencia Apache-2.0) | Coste cero y código auditable; sirve para revisar la propia web | Cubre auditoría técnica, no el seguimiento de posiciones ni los informes; habría que comprobarlo en su documentación |
 | Complementos y pago por volumen | SE Ranking (API desde 25 €/mes), Morningscore (créditos de IA por plan), Keyword.com (visibilidad IA desde 9,80 $/mes por 100 créditos), Semrush (módulos de SEO, IA, tráfico…), Serpstat (API) | Pagas por lo que usas; se puede empezar pequeño | El coste depende del volumen real (palabras, prompts, créditos): difícil de estimar |
-| Servicio y precio a medida | Morningscore (orientación 1:1 y gestión del crecimiento), Semrush (demo y empresa), SE Ranking (demo y paquete para agencias) | Llega a clientes que no quieren hacerlo ellos | Precio no público: hay que pedirlo; no se puede comparar ni presupuestar sin hablar con cada cliente |
+| Servicio y precio a medida | Morningscore (orientación 1:1 y gestión del crecimiento), Semrush (demo y empresa), SE Ranking (demo y paquete para agencias) | Llega a clientes que no quieren hacerlo ellos | Precio no público: hay que pedirlo; no se puede comparar ni presupuestar sin hablar con cada cliente | 
 
-**Modelo de presencIA:** suscripción por niveles con prueba gratuita y complementos, inspirada en las soluciones del apartado 2, pero centrada en empresas pequeñas de ámbito local. El precio se personalizaría según los servicios contratados (auditoría SEO, seguimiento de visibilidad en IA e informes), para que cada empresa pague solo lo que necesita y pueda ampliar después. Al trabajar con un público local también cabe el trato directo y el presupuesto a medida, como en el cuarto patrón. **A día de hoy aún no sé qué precio poner**: dependerá del tamaño de la empresa y de los servicios elegidos, así que no doy una cifra concreta. Esto no elimina el problema de la estimación: sin esos datos no se puede dar un coste único.
+**Modelo de presencIA:** *freemium*. La primera auditoría de una URL es gratuita —**una por enlace, no ilimitada**— para que la empresa vea el informe y su puntuación sin pagar. A partir de ahí, el seguimiento de posiciones, el explorador de keywords, el panel privado y los informes personalizados se cobran con suscripción por niveles y complementos. Ese primer informe gratuito hace de puerta de entrada, en lugar de la prueba de 14 o 7 días que usan las herramientas del apartado 2, que aquí no se ofrece. El precio sigue **pendiente**: depende del tamaño de la empresa y de los servicios contratados, y sin datos de uso no se puede fijar una cifra.
 
 ## 4. Herramientas y tecnologías (CE 2a, 2b)
 
@@ -59,13 +60,29 @@
 
 | Decisión | Opción | Madurez | Licencia | Coste | Curva de aprendizaje | Encaje con el ciclo | Elegida |
 |---|---|---|---|---|---|---|---|
-| [RELLENAR: p. ej. base de datos] | | | | | | | |
+| Lenguaje y framework | Java + Spring Boot | Activa: la web oficial muestra la versión 4.1.2 ([spring.io](https://spring.io/projects/spring-boot) · 2026-11-19) | Apache-2.0 ([LICENSE](https://github.com/spring-projects/spring-boot/blob/main/LICENSE.txt) · 2026-11-19) | 0 € | Baja: Java es lo que has usado | Sí: es lo que se ha visto en el ciclo | sí |
+| Lenguaje y framework | Node.js + Express | Pendiente: no he comprobado su cadencia de versiones | MIT en los dos ([Node.js](https://github.com/nodejs/node/blob/main/LICENSE) y [Express](https://github.com/expressjs/express/blob/master/LICENSE) · 2026-11-19) | 0 € | Alta: JavaScript en servidor no lo has trabajado | No: no es lo del ciclo | no |
+| Base de datos | MySQL (Community) | Pendiente: no he comprobado versiones | GPL en la Community; las ediciones Enterprise y Standard son aparte ([mysql.com](https://www.mysql.com/products/community/) · 2026-11-19) | 0 € la Community | Media: SQL ya lo llevas | Sí: SQL en el ciclo | no |
+| Base de datos | PostgreSQL | Activa: PostgreSQL 19 publicado ([postgresql.org](https://www.postgresql.org/about/licence/) · 2026-11-19) | PostgreSQL License, «similar a BSD o MIT» ([postgresql.org](https://www.postgresql.org/about/licence/) · 2026-11-19) | 0 € | Media: SQL ya lo llevas | Sí: SQL en el ciclo | sí |
+| Despliegue | Docker en un VPS | Docker Desktop se actualiza y las licencias de Docker Engine no cambian ([docs.docker.com](https://docs.docker.com/subscription/desktop-license/) · 2026-11-19) | Docker Desktop: gratis en uso personal, educativo y empresas de menos de 250 empleados y 10 M$; de pago fuera de ahí. Docker Engine sigue siendo de código abierto | Docker: 0 €. El VPS: **pendiente**, falta elegir proveedor | Pendiente: no sé si has usado Docker en el ciclo | Depende: el módulo de despliegue sí entra en el proyecto | sí |
+| Despliegue | Hosting compartido | Pendiente: depende del proveedor | No aplica: lo fija el proveedor | **Pendiente**: falta elegir proveedor y plan; no doy una cifra sin mirarla | Baja (opinión): se gestiona con panel | Sí: es la opción habitual del módulo | no |
+| Interfaces web | HTML + CSS + JavaScript, sin framework | Pendiente: no hay versión que comprobar, son estándares del navegador | No aplica | 0 € | Baja: es lo que has usado en el ciclo | Sí: «Desarrollo web en entorno cliente (0612)» y «Diseño de interfaces (0615)» | sí |
+| Interfaces web | React | Pendiente: no he comprobado su cadencia de versiones | MIT ([LICENSE](https://github.com/facebook/react/blob/main/LICENSE) · 2026-11-19) | 0 € | Media-alta (opinión): añade componentes, estado y una herramienta de compilación | Parcial: el ciclo trabaja JS y DOM, no React | no |
+| Interfaces web | Vue | Pendiente: no he comprobado su cadencia de versiones | MIT ([LICENSE](https://github.com/vuejs/core/blob/main/LICENSE) · 2026-11-19) | 0 € | Media (opinión): componentes con plantillas parecidas a HTML | Parcial: mismo motivo | no |
+| Autenticación | Spring Security con JWT | Activo: Spring Security es un proyecto de Spring | Apache-2.0 (no he abierto su repositorio; es la licencia de los proyectos Spring) | 0 € | Media-alta (opinión): hay que emitir y validar el token | Sí: Java y Spring | sí |
+| Autenticación | Spring Security con sesión y cookies | Activo: igual que la anterior | Apache-2.0 | 0 € | Baja (opinión): lo resuelve el propio framework | Sí: Java y Spring | no |
 
 *Cada decisión importante se convierte en una decisión registrada en [`decisiones/`](decisiones/0000-plantilla.md).*
 
 ## 5. Hueco y diferenciación (CE 1e)
 
 *Qué **no cubren** las soluciones del apartado 2 y qué aporta tu proyecto. Es tu **propuesta de valor**, en 3-5 líneas, sin exagerar: si hay soluciones mejores que la tuya para algunos usuarios, dilo.*
+
+Cuatro de las seis soluciones que hemos visto (SE Ranking, Morningscore, Keyword.com y Semrush) incluyen visibilidad en IA; la web de Serpstat no lo menciona y Lighthouse, que es gratis, revisa solo la parte técnica de la página. El hueco no es la función, **es el acceso**: esas plataformas están pensadas para agencias y equipos SEO, se pagan desde el primer mes y el precio sube con keywords, usuarios y créditos.
+
+`presencIA` se dirige a la empresa pequeña que no va a contratar una agencia. Aporta tres cosas: una primera auditoría gratuita (una por enlace) para ver el informe antes de pagar; un precio adaptado al tamaño de la empresa; y un trato cercano, con el informe explicado en lenguaje de empresa y no de agencia.
+
+Para una agencia o una empresa grande, Semrush o SE Ranking ofrecen hoy más funciones y están más probadas. La diferencia de `presencIA` es la barrera de entrada, no la potencia.
 
 ## 6. Decisiones derivadas (CE 1e, 1f, 2b)
 
