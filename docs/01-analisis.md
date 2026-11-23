@@ -156,11 +156,26 @@ Fecha de acceso: 2026-11-23.
 
 ## 8. Glosario
 
-*Una cosa, un nombre: define los términos del dominio y de tu proyecto, y anota los sinónimos que **no** vas a usar en ningún documento. Con **5 términos** basta; crece con el proyecto.*
+Una cosa, un nombre. Cuando una palabra de esta tabla aparezca en otro documento, se escribe así y no de otra forma. Los sinónimos de la última columna no se usan en ningún sitio, ni en la documentación ni en la interfaz.
 
-| Término | Definición | Sinónimos que NO uso |
+| Término | Definición en este proyecto | Sinónimos que no se usan |
 |---|---|---|
-| [RELLENAR] | | |
+| Auditoría | El proceso completo: `presencIA` recibe una URL, la analiza y emite una puntuación con recomendaciones. Es el servicio que ofrece el proyecto | «análisis», «revisión», «diagnóstico», «estudio» |
+| Informe | El resultado de la auditoría: el documento que la empresa lee o descarga, con la puntuación y las recomendaciones. La auditoría es el proceso; el informe, lo que se entrega | «reporte», «resultado», «output» |
+| SEO | Conjunto de prácticas para que una página aparezca en los resultados de los buscadores | «posicionamiento web», «posicionamiento orgánico», «SEO tradicional» |
+| GEO | Conjunto de prácticas para que una página sea citada en las respuestas de los asistentes de IA generativa | «SEO para IA», «optimización para IA» |
+| AEO | Conjunto de prácticas para que la respuesta directa o el resumen que muestra el buscador recoja el contenido de la página | «SEO de respuestas», «optimización de respuestas» |
+| Visibilidad en IA | Nombre que usa el proyecto para GEO y AEO en conjunto. Cuando el texto se refiera solo a uno de los dos, se escribe GEO o AEO, no «visibilidad» | «presencia en IA», «visibilidad generativa» |
+| Puntuación | Número con el que el informe resume el estado de una URL | «nota», «score», «valoración» |
+| Palabras clave | Los términos por los que una persona busca en un buscador | «keywords» (solo se admite en nombres de código o de campo) |
+| SERP | La página de resultados que devuelve un buscador para una búsqueda | «resultados de Google», «página de resultados» |
+| Rastreo | Recorrer una web página a página para analizarla. Quien lo hace es el rastreador | «crawling», «spider», «bot» |
+| URL | La dirección de una página concreta que se audita | «enlace», «link», «dirección» (enlace se reserva para los hipervínculos de las fuentes) |
+| Cliente | La empresa cuya web se audita | «usuario», «cuenta» |
+| Usuario | La persona que se registra e inicia sesión en la zona privada | «cliente», «miembro» |
+| Freemium | Modelo del proyecto: la primera auditoría de una URL es gratuita —una por enlace— y el resto se paga por suscripción | «gratis con límite», «prueba gratuita» |
+
+*Queda una incoherencia pendiente de resolver en `00-documentoInicio.md`: allí se dice «una auditoría gratuita por enlace», y este glosario reserva «enlace» para los hipervínculos. Debería decir «una por URL».*
 
 ---
 
