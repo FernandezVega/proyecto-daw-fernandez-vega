@@ -41,6 +41,6 @@ Para una entrevista conviene tu **nombre real**. Si prefieres no exponerlo, usa 
 
 | Pregunta | Mi respuesta |
 |---|---|
-| ¿Nombre real o alias? | [RELLENAR] |
-| ¿Repositorio público o privado hasta la defensa (excepción)? | [RELLENAR] |
-| ¿Dónde se guarda mi seguimiento? | [RELLENAR] |
+| ¿Nombre real o alias? | Claudia Fernández |
+| ¿Repositorio público o privado hasta la defensa (excepción)? | público |
+| ¿Dónde se guarda mi seguimiento? | pendiente |

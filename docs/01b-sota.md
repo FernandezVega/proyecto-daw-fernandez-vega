@@ -52,7 +52,7 @@
 | Complementos y pago por volumen | SE Ranking (API desde 25 €/mes), Morningscore (créditos de IA por plan), Keyword.com (visibilidad IA desde 9,80 $/mes por 100 créditos), Semrush (módulos de SEO, IA, tráfico…), Serpstat (API) | Pagas por lo que usas; se puede empezar pequeño | El coste depende del volumen real (palabras, prompts, créditos): difícil de estimar |
 | Servicio y precio a medida | Morningscore (orientación 1:1 y gestión del crecimiento), Semrush (demo y empresa), SE Ranking (demo y paquete para agencias) | Llega a clientes que no quieren hacerlo ellos | Precio no público: hay que pedirlo; no se puede comparar ni presupuestar sin hablar con cada cliente | 
 
-**Modelo de presencIA:** *freemium*. La primera auditoría de una URL es gratuita —**una por enlace, no ilimitada**— para que la empresa vea el informe y su puntuación sin pagar. A partir de ahí, el seguimiento de posiciones, el explorador de keywords, el panel privado y los informes personalizados se cobran con suscripción por niveles y complementos. Ese primer informe gratuito hace de puerta de entrada, en lugar de la prueba de 14 o 7 días que usan las herramientas del apartado 2, que aquí no se ofrece. El precio sigue **pendiente**: depende del tamaño de la empresa y de los servicios contratados, y sin datos de uso no se puede fijar una cifra.
+**Modelo de presencIA:** *freemium*. La primera auditoría de una URL es gratuita —**una por URL, no ilimitada**— para que la empresa vea el informe y su puntuación sin pagar. A partir de ahí, el seguimiento de posiciones, el explorador de keywords, el panel privado y los informes personalizados se cobran con suscripción por niveles y complementos. Ese primer informe gratuito hace de puerta de entrada, en lugar de la prueba de 14 o 7 días que usan las herramientas del apartado 2, que aquí no se ofrece. El precio sigue **pendiente**: depende del tamaño de la empresa y de los servicios contratados, y sin datos de uso no se puede fijar una cifra.
 
 ## 4. Herramientas y tecnologías (CE 2a, 2b)
 
@@ -72,39 +72,42 @@
 | Autenticación | Spring Security con JWT | Activo: Spring Security es un proyecto de Spring | Apache-2.0 (no he abierto su repositorio; es la licencia de los proyectos Spring) | 0 € | Media-alta (opinión): hay que emitir y validar el token | Sí: Java y Spring | sí |
 | Autenticación | Spring Security con sesión y cookies | Activo: igual que la anterior | Apache-2.0 | 0 € | Baja (opinión): lo resuelve el propio framework | Sí: Java y Spring | no |
 
-*Cada decisión importante se convierte en una decisión registrada en [`decisiones/`](decisiones/0000-plantilla.md).*
-
 ## 5. Hueco y diferenciación (CE 1e)
 
 *Qué **no cubren** las soluciones del apartado 2 y qué aporta tu proyecto. Es tu **propuesta de valor**, en 3-5 líneas, sin exagerar: si hay soluciones mejores que la tuya para algunos usuarios, dilo.*
 
 Cuatro de las seis soluciones que hemos visto (SE Ranking, Morningscore, Keyword.com y Semrush) incluyen visibilidad en IA; la web de Serpstat no lo menciona y Lighthouse, que es gratis, revisa solo la parte técnica de la página. El hueco no es la función, **es el acceso**: esas plataformas están pensadas para agencias y equipos SEO, se pagan desde el primer mes y el precio sube con keywords, usuarios y créditos.
 
-`presencIA` se dirige a la empresa pequeña que no va a contratar una agencia. Aporta tres cosas: una primera auditoría gratuita (una por enlace) para ver el informe antes de pagar; un precio adaptado al tamaño de la empresa; y un trato cercano, con el informe explicado en lenguaje de empresa y no de agencia.
+`presencIA` se dirige a la empresa pequeña que no va a contratar una agencia. Aporta tres cosas: una primera auditoría gratuita (una por URL) para ver el informe antes de pagar; un precio adaptado al tamaño de la empresa; y un trato cercano, con el informe explicado en lenguaje de empresa y no de agencia.
 
 Para una agencia o una empresa grande, Semrush o SE Ranking ofrecen hoy más funciones y están más probadas. La diferencia de `presencIA` es la barrera de entrada, no la potencia.
 
 ## 6. Decisiones derivadas (CE 1e, 1f, 2b)
 
-*Qué consecuencias tiene este estudio en tu proyecto.*
-
-- **Tipo de proyecto elegido** (enlaza con el apartado 3 de [`01-analisis.md`](01-analisis.md)): [RELLENAR]
-- **Requisitos que salen del estudio** (con su ID del apartado 4 de `01-analisis.md`): [RELLENAR]
-- **Decisiones técnicas** (enlace a cada archivo de `decisiones/`): [RELLENAR]
+- **Tipo de proyecto:** aplicación web. Ninguna de las seis soluciones del apartado 2 es un producto propio que solo audite y recomiende para una empresa pequeña; las tres que incluyen visibilidad en IA se venden a agencias y equipos SEO. El razonamiento completo está en [`01-analisis.md`](01-analisis.md), apartado 3.
+- **Requisitos que salen del estudio:** `RF-01` (auditar y puntuar SEO, GEO y AEO), `RF-03` (explorar palabras clave) y `RF-04` (seguir posiciones) recogen funciones que ya ofrecen SE Ranking, Morningscore, Keyword.com y Serpstat. `RNF-01` y `RNF-03` (una sola pantalla y un informe en lenguaje de empresa) salen del hueco del apartado 5. `REST-02` y `REST-03` recogen el coste del alojamiento y las tecnologías del ciclo. Todos están en [`01-analisis.md`](01-analisis.md), apartado 4.
+- **Decisiones técnicas:** Java 21 con Spring Boot para el backend, PostgreSQL como base de datos, HTML, CSS y JavaScript sin framework para la interfaz, Spring Security con JWT para la autenticación y Docker sobre un VPS para el despliegue. La comparación con las alternativas está en el apartado 4 de este documento. **Pendiente:** el registro individual de cada decisión en `decisiones/`, porque esa carpeta todavía no existe.
 
 ## 7. Fuentes y calidad (CE 2a)
 
-*Al menos **2 fuentes independientes** (no dos páginas de la misma empresa). Datos oficiales o primarios antes que blogs.*
+Cinco fuentes independientes: dos oficiales (INE y ONTSI), un centro de investigación (Pew) y dos privadas que no compiten con las soluciones estudiadas. Google se usa solo para lo que es: la documentación del operador sobre sus propias funciones.
 
-| # | Fuente (enlace) | Tipo | Fecha de acceso | Fiabilidad (alta / media / baja) y por qué |
+| # | Fuente (enlace) | Tipo | Fecha de acceso | Fiabilidad y por qué |
 |---|---|---|---|---|
-| F1 | [RELLENAR] | | | |
+| F1 | [INE, Encuesta de uso de TIC y comercio electrónico, 1T 2025](https://ine.es/dyngs/Prensa/ETICCE20241T2025.htm) | Oficial, dato primario | 2026-11-23 | Alta: estadística pública con metodología publicada |
+| F2 | [ONTSI, Indicadores de uso de IA en España 2025](https://www.ontsi.es/es/publicaciones/indicadores-de-uso-de-inteligencia-artificial-en-espana-2025) | Oficial | 2026-11-19 | Alta: organismo público, aunque el dato se apoya en encuestas propias |
+| F3 | [Pew Research Center, clics con y sin resumen de IA (2025-07-22)](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) | Centro de investigación | 2026-11-19 | Alta: estudio propio con muestra declarada |
+| F4 | [BrightLocal, SMB Marketing Report](https://www.brightlocal.com/research/smb-marketing-report/) y [Consumer Search Behavior (2025-04-29)](https://www.brightlocal.com/research/consumer-search-behavior) | Empresa privada del sector | 2026-11-19 | Media: son dos estudios de la **misma editorial**, así que cuentan como **una** fuente independiente, y la empresa vende servicios del sector que estudia |
+| F5 | [Google Search Central, AI features](https://developers.google.com/search/docs/appearance/ai-features) | Documentación del operador | 2026-11-19 | Alta para describir qué son las funciones de IA; **baja** como prueba de demanda, porque Google no publica cifras ahí |
 
 ## 8. Límites
 
-*Qué **no pudiste comprobar** y qué datos son estimaciones. Una lista corta y honesta es mejor que fingir certeza.*
-
-- [RELLENAR]
+- **Precios:** Semrush y Serpstat no publican importes en la página que he abierto. Los de SE Ranking, Morningscore y Keyword.com los da su propia web, sin comprobación independiente.
+- **Tamaño de las empresas:** ninguna declara plantilla ni facturación. Por eso la columna «Tamaño» del apartado 1 de `01-analisis.md` queda en «no lo dice».
+- **BrightLocal:** es una empresa comercial y dos de sus estudios son de la misma editorial. Cuentan como una sola fuente independiente, no como dos.
+- **Convocatorias:** no he podido abrir el PDF de SEKUENS/IDEPA, ni los desplegables de requisitos de ENISA, ni el importe del bono del Kit Digital.
+- **Coste del despliegue:** el precio del VPS sigue sin cifra; no se ha inventado.
+- **Conexión con motores de IA:** no está comprobado que `presencIA` pueda consultar en tiempo real a ChatGPT, Perplexity o Gemini. Está anotado como duda en `00-documentoInicio.md`, apartado 10.
 
 ---
 

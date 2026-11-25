@@ -43,7 +43,7 @@ La aplicación estaría dirigida al ámbito empresarial: empresas, de cualquier 
 | # | Funcionalidad | ¿Imprescindible? (sí / no) |
 |---|---|---|
 | 1 | Auditoría automática de una URL: controles SEO, GEO y AEO, con puntuación | **Sí** |
-| 2 | Generación de informe de auditoría: privado, público o por enlace | **Sí** |
+| 2 | Generación de informe de auditoría: privado, público o por URL | **Sí** |
 | 3 | Explorador de keywords: sugerencias de Google/Bing, intención, dificultad | **Sí** |
 | 4 | Seguimiento de posiciones de una marca | **Sí** |
 | 5 | Login de usuario en zona privada        | **Sí**  |   
